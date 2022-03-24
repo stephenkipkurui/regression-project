@@ -19,7 +19,7 @@ def prepare_zillow():
     zillow = zillow.rename(columns = ({'bedroomcnt':'bed_count','bathroomcnt':'bath_count',
                                      'calculatedfinishedsquarefeet':'square_feet',
                                        'taxvaluedollarcnt':'assessed_value',
-                                       'yearbuilt':'yearbuilt','transactiondate':'trans_date'}))
+                                       'yearbuilt':'year_built','transactiondate':'trans_date'}))
                            
     # Drop nulls                       
     zillow = zillow.dropna()
@@ -39,11 +39,11 @@ def prepare_zillow():
                                        random_state=123)
     # Convert to pandas DataFrame
     train = pd.DataFrame(train, columns=['bed_count','bath_count','square_feet',
-                                                          'assessed_value','yearbuilt','trans_date'])
+                                                          'assessed_value','year_built','trans_date'])
     validate = pd.DataFrame(validate, columns=['bed_count','bath_count','square_feet',
-                                                          'assessed_value','yearbuilt','trans_date'])
+                                                          'assessed_value','year_built','trans_date'])
     test = pd.DataFrame(test, columns=['bed_count','bath_count','square_feet',
-                                                          'assessed_value','yearbuilt','trans_date'])
+                                                          'assessed_value','year_built','trans_date'])
 
     # Function return
     return train, validate, test
