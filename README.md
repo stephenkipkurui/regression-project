@@ -64,17 +64,18 @@ This projects follows Data Science Pipeline. Should you wish to recreate the pro
 # Appendix
 
 Data Dictionary 
-   |Column | Description | Dtype|
-    |--------- | --------- | ----------- |
-    bed_count | The number of bedrooms | float64 |
-    bath_count | The number of bathrooms | float64 |
-    square_feet | Square footage of property | float64 |
-    assessed_value | Property tax value dollar amount | float64 |
-    built_year | Year the property was built | int64 |
-    zip_code | Federal Information Processing Standard code | int64 |
-    city | City property located | str |
-    home_age | The age of home till 2017 | int64
-    trans_day | The day of month home transactioned | int64 |
+
+|Column | Description | Dtype|
+|--------- | --------- | ----------- |
+|bed_count | The number of bedrooms | float64 |
+|bath_count | The number of bathrooms | float64 |
+|square_feet | Square footage of property | float64 |
+|assessed_value | Property tax value dollar amount | float64 |
+|built_year | Year the property was built | int64 |
+|zip_code | Federal Information Processing Standard code | int64 |
+|city | City property located | str |
+|home_age | The age of home till 2017 | int64
+|trans_day | The day of month home transactioned | int64 |
 
 # Steps to Reproduce this Project
 
