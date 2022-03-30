@@ -77,7 +77,7 @@ Data Dictionary
 |home_age | The age of home till 2017 | int64
 |trans_day | The day of month home transactioned | int64 |
 
-# Steps to Reproduce this Project
+# To Reconstruct this Project
 
 >- You'll require own env.py file to store query connection credentials(access rights to CodeUp SQL is required).
 >- Read this ReadMe.md file fully and make necessary files
@@ -86,11 +86,18 @@ Data Dictionary
 >- Follow instructions above and run the final zillow_workspace report.
 
 
-# Model
+# Modeling 
+### Perform Linear Regression, Polynomial Regression and Tweedie Regression (GLM).
+### Determine best model for prediction of assessed tax value.
 
 
 # Key Findings 
+- Overall tax prediction is achieved by Polynomial Regression(Root Mean Squared Error of USD 183,353.21 vs Baseline USD 193,231.11) - a USD 10,000 difference.
+- Square feet is the key driver for assessed value folowed by bath room count, and lastly bedroom count.
+- Varying the features, Linear progression model seem to perform better than Polynomial regression.
 
-# Future Explorations of Interest
+# Future Study on Unseen Data
+- With more time, create new unseen features that in combination or slicinf thereof will predict assessed value.
+- Heat map shows very strong correlation between bath count and square feet. How are these two features alone affect assessed value?
 
 
